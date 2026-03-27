@@ -1,27 +1,41 @@
 # OpenSCAD Starter Template
 
-An **OpenSCAD starter template** for 3D models and prints: spec-driven, AI-friendly, with millimeters (mm) and Z-up everywhere.
+An OpenSCAD starter template for small printable parts, organized around a
+minimal instruction model instead of a large stack of planning documents.
+
+## Template approach
+
+- `PROJECT.md` holds context, intent, and notes that do not belong in the
+  implementation contract.
+- `REQUIREMENTS.md` holds hard and soft requirements for the part.
+- `AGENTS.md` tells coding agents to read those files and keep changes aligned
+  with them.
+
+This template is aimed at small OpenSCAD repos where a separate spec, plan,
+style guide, and API reference would be more process than product.
 
 ## Using this template
 
-**If you use [BOOTSTRAP.md](BOOTSTRAP.md) to generate the project structure yourself**
-
-- The bootstrap creates the file tree (agents.md, spec.md, lib/, models/, etc.) but does **not** create a root README.md or LICENSE.
-- You must add your **own** README.md and LICENSE for your project.
-
-**If you clone this repo**
-
-- You get this README and the current LICENSE (MIT, per [LICENSE](LICENSE)).
-- You should **replace** both the root README.md and LICENSE with your own (project name, copyright holder, and license choice).
+If you use [BOOTSTRAP.md](BOOTSTRAP.md), it creates the minimal repo structure.
+If you clone this repo directly, replace `README.md`, `PROJECT.md`,
+`REQUIREMENTS.md`, and `LICENSE` with project-specific content.
 
 ## Vendored libraries and licensing
 
-The template includes a `lib/vendor/` area for third-party OpenSCAD libraries (see [BOOTSTRAP.md](BOOTSTRAP.md) and [lib/vendor/README.md](lib/vendor/README.md)). **Adding vendored libraries to the repo can restrict which license is appropriate** for the overall project (e.g. GPL/AGPL vs MIT). Check each vendored library’s license and, if needed, choose or adjust your project’s LICENSE accordingly.
+The template includes `lib/vendor/` for third-party OpenSCAD libraries.
+Adding vendored libraries may constrain your project license, so check each
+library's license before deciding what your repo should use.
 
 ## Project layout
 
-See [BOOTSTRAP.md](BOOTSTRAP.md) for the full file tree. Key directories: `lib/project/`, `lib/vendor/`, `models/`, `tests/`, `exports/`.
+- `PROJECT.md` for project context and goals
+- `REQUIREMENTS.md` for hard and soft requirements
+- `lib/project/` for reusable OpenSCAD modules
+- `models/` for top-level renderable variants
+- `tests/` for render cases and validation notes
+- `exports/` for generated artifacts
 
 ## Getting started
 
-Put your requirements in spec.md, use agents.md for AI/agent context, and implement under lib/project/ and models/.
+Fill in `PROJECT.md` and `REQUIREMENTS.md`, then implement under `lib/project/`
+and `models/`.

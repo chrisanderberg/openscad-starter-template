@@ -8,4 +8,5 @@ When you add a library, record:
 - what you use it for
 - how to import it (use/include)
 
-Consider adding a `deps.md` at repo root when you start adding dependencies.
+If the dependency introduces reusable project constraints or licensing notes,
+record them in `PROJECT.md` or `README.md`.

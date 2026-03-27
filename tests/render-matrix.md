@@ -8,6 +8,8 @@ Use this as a lightweight test plan. Add cases as the project evolves.
 - [ ] No unintended self-intersections.
 - [ ] Parameter defaults render a sensible part.
 - [ ] Debug mode (if present) doesn't change the exported solid.
+- [ ] Generated meshes are written to `exports/`, not committed next to source
+  models.
 
 ## Suggested parameter cases
 1. Default parameters
