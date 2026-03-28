@@ -20,6 +20,18 @@ If you use [BOOTSTRAP.md](BOOTSTRAP.md), it creates the minimal repo structure.
 If you clone this repo directly, replace `README.md`, `PROJECT.md`,
 `REQUIREMENTS.md`, and `LICENSE` with project-specific content.
 
+### One-command bootstrap
+
+Create a new project by copying this template without its Git history:
+
+```bash
+/Users/christopheranderberg/projects/3Dmodels/openscad-starter-template/scripts/bootstrap-new-project.sh \
+  /Users/christopheranderberg/projects/3Dmodels/my-new-project \
+  --git
+```
+
+Omit `--git` if you want to copy the files first and initialize Git yourself.
+
 ## Vendored libraries and licensing
 
 The template includes `lib/vendor/` for third-party OpenSCAD libraries.

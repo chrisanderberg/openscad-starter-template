@@ -3,6 +3,16 @@
 Use this as a checklist when starting a new small OpenSCAD repository from the
 template.
 
+## Quick start
+
+You can copy this template into a new project directory with:
+
+```bash
+./scripts/bootstrap-new-project.sh /path/to/new-project --git
+```
+
+This copies the template without the template repo's `.git` history.
+
 ## File tree
 - `README.md`
 - `PROJECT.md`
